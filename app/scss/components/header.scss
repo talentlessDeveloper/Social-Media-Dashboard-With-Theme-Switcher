@@ -1,0 +1,28 @@
+@use "../utils/" as *;
+
+.header {
+  margin-top: rem(30);
+
+  @include breakpoint-desktop(medium) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    @include breakpoint-mobile(small) {
+      padding-bottom: rem(10);
+      margin-bottom: rem(10);
+      border-bottom: 1px solid var(--text-color1);
+    }
+  }
+
+  &__subtitle {
+    font-size: rem(14);
+    font-weight: 700;
+    color: var(--text-color1);
+  }
+
+  &__toggle {
+  }
+}

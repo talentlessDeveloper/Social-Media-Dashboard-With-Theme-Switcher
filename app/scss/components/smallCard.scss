@@ -1,0 +1,13 @@
+@use "../utils/" as *;
+
+.small--card {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bottom--item {
+    margin-top: rem(30);
+  }
+}
